@@ -1,5 +1,5 @@
 CC	= gcc
-OPT	= -g -O3
+OPT	= -g -O3 -std=c99
 CHIP	= 
 ISA	= 
 DEFS	= -DDATA_ANALYSIS 
