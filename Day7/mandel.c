@@ -8,6 +8,7 @@ mandel(int disp_width, int disp_height, int *array, int max_iter) {
     scale_real = 3.5 / (double)disp_width;
     scale_imag = 3.5 / (double)disp_height;
 
+	#pragma omp parallel for private(i, j, iter) schedule(dynamic,6)
     for(i = 0; i < disp_width; i++) {
 
 	x = ((double)i * scale_real) - 2.25; 

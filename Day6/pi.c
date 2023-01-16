@@ -11,7 +11,7 @@ pi_step(size_t N, double i) {
 double
 calc_pi(size_t N) {
     double pi = 0;
-    double i;
+    int i;
     double h = 1.0/N;
     for(i = 1; i < N; i++){
         pi += pi_step(N, i);
